@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+  <title>Blood Donation System</title>
+</head>
+<body onload="shuffleTitle()">
+  <div class="navigation-bar">
+    <img src="logo.jpg" alt="logo" id="logo">
+    <div id="navigation-container"></div>
+      
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+  </div>
+  
+  <!-- Slideshow code below -->
+    <div class="auto-slider">
+      <ul class="auto-slider__content">
+       <li><img src="slider1.jpg" alt="slider-1"></li>
+       <li><img src="slider2.jpg" alt="slider-2"></li>
+       <li><img src="slider3.jpg" alt="slider-3"></li>
+       <li><img src="slider4.jpg" alt="slider-4"></li>
+      </ul>
+     </div>
+  
+  <!-- End of Slideshow-->
+
+  <!-- Facts that changes every 3 seconds via setInterval()-->
+  <div id="facts">
+    <h3 class="emp">Did you know?</h1>
+    
+    <p id="didyouknow" style="text-align: center;"></p>
+  </div>
+
+  <div class="donatecontainer">
+    <p class="question">
+      Do you want to contribute? <br>
+      Are you a <b>donor</b> or <b>medical operator</b>?
+    </p>
+    
+    <!-- clickable area that opens a new window with desired size  -->
+      <a href="#" onClick="window.open('donorPerson.html','donorPerson','resizable,height=480,width=320'); return false;">
+        <div id="donor">
+        <!-- I am donor-->
+        <!-- Images are stock images. -->
+        <img style='height: 100%; width: 100%; object-fit: fill' src='donor.png'/> 
+        <div class="centered">I am Donor.</div>
+        </div>
+      </a>
+
+    <a href="#" onClick="window.open('medicalOperator.html','MedicalOperator','resizable,height=260,width=370'); return false;">
+      <div id="patient">
+      <!-- I am nurse-->
+      <!-- Images are stock images. -->
+      <img style='height: 100%; width: 100%; object-fit: fill' src='medicaloperator.png'/>
+      <div class="centered mo">I am Medical Operator.</div>
+      </div>
+    </div>
+    </a>
+
+    <!--Blood donation for cats and dogs.-->
+    <div id="animals">
+        <div class="hero-section">
+            <div class="hero-section-text">
+              <h1>Cats and Dogs Also Need Blood.</h1>
+              <h5>Let your little friend to be another's life.</h5>
+            </div>
+          </div>
+    </div>
+
+    <!--Cat Dog blood donation area -->
+
+    <div class="donatecontainer">
+
+        <p class="question">
+            Do you want to contribute? <br>
+            Do you have a <b>cat</b> or a <b>dog</b>?
+            
+        </p>
+    <a href="#" onClick="window.open('donorCat.html','donorCat','resizable,height=480,width=320'); return false;">
+      <div id="donor">
+      <!-- I am donor-->
+      <!-- Images are stock images. -->
+      <img style='height: 100%; width: 100%; object-fit: fill' src='catBloodDonation.jpg'/> 
+      <div class="centered">I have Cat.</div>
+      </div>
+    </a>
+
+  <a href="#" onClick="window.open('donorDog.html','donorDog','resizable,height=480,width=320'); return false;">
+    <div id="patient">
+    <!-- I am nurse-->
+    <!-- Images are stock images. -->
+    <img style='height: 100%; width: 100%; object-fit: fill' src='dogBloodDonation.jpg'/>
+    <div class="centered mo">I have Dog.</div>
+    </div>
+  </div>
+  </a>
+
+  <!--end of cat and dog blood donation area-->
+
+  <!--footer for indicating website has license-->
+  <div class="footer">
+    <p>All Rights Reserved © - Dorukan Özercan 1506539 - Website Made for Lecture COP4424 - Netaş Advanced Web Technologies by Dorukan Özercan
+      </p>
+  </div>
+
+
+</body>
+</html>

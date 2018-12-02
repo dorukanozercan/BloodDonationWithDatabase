@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cat Blood Donation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <h3 style="text-align: center">Please fill the following.</h3>
+        <div class="form-class">
+            <form action="insert.php" method="post">
+                <br>
+                Dog's Name : <input type="text" name="name">
+                <br><br>
+				<!-- Added unchangable type which is Dog that user can't change. REPLACES SURNAME -->
+				Type : <input type="text" name="surname" value="Dog" readonly>
+				<br><br>
+                Age : <input type="text" name="age">
+                <br><br>
+                Gender : <select name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                <br><br>
+    
+                Blood Type : <select name="bloodtype">
+                        <option value="O-positive">O+</option>
+                        <option value="O-negative">O-</option>
+                        <option value="A-positive">A+</option>
+                        <option value="A-negative">A--</option>
+                        <option value="B-positive">B+</option>
+                        <option value="B-negative">B-</option>
+                        <option value="AB-positive">AB+</option>
+                        <option value="AB-negative">AB-</option>
+                      </select>
+    
+                <br><br>
+                Please write if dog had any disease : <input type="text" name="disease">
+                <br><br>
+    
+                <input type="submit" value="Confirm">
+                </form>
+        </div>
+</body>
+</html>
